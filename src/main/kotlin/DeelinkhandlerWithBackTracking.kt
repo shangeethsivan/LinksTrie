@@ -50,7 +50,7 @@ class DeeplinkTrie {
 
         val pathValuesMap = mutableMapOf<String, String>()
 
-        return findHandler(inputPaths, rootNode, pathValuesMap)?.getPageData(pathValuesMap)
+        return findHandler(inputPaths, rootNode, pathValuesMap)?.getPageData(input, pathValuesMap)
     }
 
     private fun createAndInsertNodes(
